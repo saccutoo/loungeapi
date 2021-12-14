@@ -1,0 +1,245 @@
+2020-12-28T17:24:30.6124023+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices running.
+2020-12-28T17:24:30.6679121+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices timeInterval: "30"
+2020-12-28T17:24:30.6709603+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices running.
+2020-12-28T17:24:30.6744420+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices timeInterval: "30"
+2020-12-28T17:24:33.0560601+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/index.html  
+2020-12-28T17:24:33.5748095+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T17:24:34.3147768+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T17:24:34.3254487+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 1299.7969ms 200 text/html
+2020-12-28T17:26:48.5663718+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices running.
+2020-12-28T17:26:48.6041263+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices timeInterval: "30"
+2020-12-28T17:26:48.6071567+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices running.
+2020-12-28T17:26:48.6110008+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices timeInterval: "30"
+2020-12-28T17:26:49.9642495+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/index.html  
+2020-12-28T17:26:50.1122280+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T17:26:51.0147492+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T17:26:51.1385351+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 1136.8615ms 200 text/html
+2020-12-28T17:26:51.3187945+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/v1/swagger.json  
+2020-12-28T17:26:51.3504605+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T17:28:39.7566924+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices running.
+2020-12-28T17:28:39.7909398+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices timeInterval: "30"
+2020-12-28T17:28:39.7943241+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices running.
+2020-12-28T17:28:39.7975865+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices timeInterval: "30"
+2020-12-28T17:29:23.0098610+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices running.
+2020-12-28T17:29:23.0418033+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices timeInterval: "30"
+2020-12-28T17:29:23.0454951+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices running.
+2020-12-28T17:29:23.0488867+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices timeInterval: "30"
+2020-12-28T17:29:23.0617044+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:29:49.6904110+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/index.html  
+2020-12-28T17:29:49.7712914+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T17:29:50.0421110+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T17:29:50.0567868+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 367.1921ms 200 text/html
+2020-12-28T17:29:50.2985356+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/v1/swagger.json  
+2020-12-28T17:29:50.3019692+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T17:29:50.3572908+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/favicon-32x32.png  
+2020-12-28T17:29:50.3670659+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T17:29:50.4675356+07:00 [INF] [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+2020-12-28T17:29:50.4829308+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T17:29:50.4991184+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 139.4642ms 200 image/png
+2020-12-28T17:29:50.5468185+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T17:29:50.5563959+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 254.1826ms 200 application/json;charset=utf-8
+2020-12-28T17:29:55.5324482+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:29:55.5548553+07:00 [INF] [API.BussinessLogic.CustomerHandler] SyncFromSmartVistaToPortal Last ID sync: 0
+2020-12-28T17:30:33.8473210+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:30:55.7190180+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:37:52.7453705+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices running.
+2020-12-28T17:37:52.7712567+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices timeInterval: "30"
+2020-12-28T17:37:52.7743942+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices running.
+2020-12-28T17:37:52.7774762+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices timeInterval: "30"
+2020-12-28T17:37:52.7874540+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:42:40.7923141+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:42:41.2262552+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:42:43.1581609+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/index.html  
+2020-12-28T17:42:43.2024682+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T17:42:43.4815057+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T17:42:43.4932942+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 337.2731ms 200 text/html
+2020-12-28T17:42:43.7523127+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/v1/swagger.json  
+2020-12-28T17:42:43.7636188+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T17:42:43.9808060+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T17:42:43.9867325+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 239.2375ms 200 application/json;charset=utf-8
+2020-12-28T17:42:50.5049677+07:00 [INF] [API.BussinessLogic.CustomerHandler] SyncFromSmartVistaToPortal Last ID sync: 0
+2020-12-28T17:43:10.7104402+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:43:40.2979303+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:43:49.2632655+07:00 [INF] [API.BussinessLogic.CustomerHandler] PKG_ELG_CMS_CUSTOMER.SYNC_CUSTOMER_FROM_SV output data: {"Data":{"Id":0.0,"Name":"failed","Status":"99","Message":null},"StatusCode":99,"Message":null,"TotalCount":0.0,"TotalPage":0.0,"TotalRecord":0.0}
+2020-12-28T17:44:10.2923355+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:44:11.8204509+07:00 [INF] [API.BussinessLogic.CustomerHandler] PKG_ELG_CMS_CUSTOMER.SYNC_CUSTOMER_FROM_SV output data: {"Data":{"Id":0.0,"Name":"failed","Status":"99","Message":null},"StatusCode":99,"Message":null,"TotalCount":0.0,"TotalPage":0.0,"TotalRecord":0.0}
+2020-12-28T17:44:20.3787705+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices is working. Count: 1
+2020-12-28T17:44:40.2977346+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:45:32.5547757+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:45:32.5992946+07:00 [INF] [API.BussinessLogic.CustomerHandler] SyncFromSmartVistaToPortal Last ID sync: 0
+2020-12-28T17:45:36.5869795+07:00 [ERR] [API.BussinessLogic.CustomerHandler] Exception Error
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04068: existing state of packages has been discarded
+ORA-04061: existing state of package body "UTIL_IPORTAL.PKG_ELG_CMS_CUSTOMER" has been invalidated
+ORA-04065: not executed, altered or dropped package body "UTIL_IPORTAL.PKG_ELG_CMS_CUSTOMER"
+ORA-06508: PL/SQL: could not find program unit being called: "UTIL_IPORTAL.PKG_ELG_CMS_CUSTOMER"
+ORA-06512: at line 1
+   at API.Infrastructure.Repositories.RepositoryHandler`3.ExecuteProcOracle(String procName, IDbConnection iConn, IDbTransaction iTrans, Object dyParam) in E:\tungck\src\Portal\Source\loyalty-api\src\Services\Lounge.Jobs\Infrastructure\Repositories\RepositoryHandler.cs:line 441
+   at API.BussinessLogic.CustomerHandler.insertDataToPortal(List`1 dataSV) in E:\tungck\src\Portal\Source\loyalty-api\src\Services\Lounge.Jobs\BussinessLogic\CustomerInfo\CustomerHandler.cs:line 137
+2020-12-28T17:45:40.9000865+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:46:10.3085256+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:46:12.1391337+07:00 [INF] [API.BussinessLogic.CustomerHandler] PKG_ELG_CMS_CUSTOMER.SYNC_CUSTOMER_FROM_SV output data: {"Data":{"Id":0.0,"Name":"failed","Status":"99","Message":null},"StatusCode":99,"Message":null,"TotalCount":0.0,"TotalPage":0.0,"TotalRecord":0.0}
+2020-12-28T17:46:53.5682822+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:47:12.1699675+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:47:21.8938741+07:00 [INF] [API.BussinessLogic.CustomerHandler] PKG_ELG_CMS_CUSTOMER.SYNC_CUSTOMER_FROM_SV output data: {"Data":{"Id":0.0,"Name":"failed","Status":"99","Message":null},"StatusCode":99,"Message":null,"TotalCount":0.0,"TotalPage":0.0,"TotalRecord":0.0}
+2020-12-28T17:47:30.3090032+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices is working. Count: 7
+2020-12-28T17:47:46.3010895+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:47:46.3488471+07:00 [INF] [API.BussinessLogic.CustomerHandler] SyncFromSmartVistaToPortal Last ID sync: 0
+2020-12-28T17:48:10.2771860+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:48:15.1573152+07:00 [INF] [API.BussinessLogic.CustomerHandler] PKG_ELG_CMS_CUSTOMER.SYNC_CUSTOMER_FROM_SV output data: {"Data":{"Id":0.0,"Name":"failed","Status":"99","Message":null},"StatusCode":99,"Message":null,"TotalCount":0.0,"TotalPage":0.0,"TotalRecord":0.0}
+2020-12-28T17:48:38.0542002+07:00 [INF] [API.BussinessLogic.CustomerHandler] PKG_ELG_CMS_CUSTOMER.SYNC_CUSTOMER_FROM_SV output data: {"Data":{"Id":0.0,"Name":"failed","Status":"99","Message":null},"StatusCode":99,"Message":null,"TotalCount":0.0,"TotalPage":0.0,"TotalRecord":0.0}
+2020-12-28T17:48:40.2950417+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:48:45.6639489+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices is working. Count: 13
+2020-12-28T17:49:10.3121463+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:50:35.5984452+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:50:36.7508454+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T17:50:43.8987541+07:00 [INF] [API.BussinessLogic.CustomerHandler] SyncFromSmartVistaToPortal Last ID sync: 0
+2020-12-28T17:51:25.5455056+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:02:40.3875194+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:02:40.3917726+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:02:40.4035452+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:02:40.4128513+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:02:40.6936307+07:00 [ERR] [API.BussinessLogic.CustomerHandler] Exception Error
+Oracle.ManagedDataAccess.Client.OracleException (0x80004005): ORA-04068: existing state of packages has been discarded
+ORA-04061: existing state of package body "UTIL_IPORTAL.PKG_ELG_CMS_CUSTOMER" has been invalidated
+ORA-04065: not executed, altered or dropped package body "UTIL_IPORTAL.PKG_ELG_CMS_CUSTOMER"
+ORA-06508: PL/SQL: could not find program unit being called: "UTIL_IPORTAL.PKG_ELG_CMS_CUSTOMER"
+ORA-06512: at line 1
+   at API.Infrastructure.Repositories.RepositoryHandler`3.ExecuteProcOracle(String procName, IDbConnection iConn, IDbTransaction iTrans, Object dyParam) in E:\tungck\src\Portal\Source\loyalty-api\src\Services\Lounge.Jobs\Infrastructure\Repositories\RepositoryHandler.cs:line 441
+   at API.BussinessLogic.CustomerHandler.insertDataToPortal(List`1 dataSV) in E:\tungck\src\Portal\Source\loyalty-api\src\Services\Lounge.Jobs\BussinessLogic\CustomerInfo\CustomerHandler.cs:line 137
+2020-12-28T18:03:10.3955163+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:03:27.7955183+07:00 [INF] [API.BussinessLogic.CustomerHandler] PKG_ELG_CMS_CUSTOMER.SYNC_CUSTOMER_FROM_SV output data: {"Data":{"Id":0.0,"Name":"failed","Status":"99","Message":null},"StatusCode":99,"Message":null,"TotalCount":0.0,"TotalPage":0.0,"TotalRecord":0.0}
+2020-12-28T18:03:40.3946607+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:04:04.1018728+07:00 [INF] [API.BussinessLogic.CustomerHandler] PKG_ELG_CMS_CUSTOMER.SYNC_CUSTOMER_FROM_SV output data: {"Data":{"Id":0.0,"Name":"failed","Status":"99","Message":null},"StatusCode":99,"Message":null,"TotalCount":0.0,"TotalPage":0.0,"TotalRecord":0.0}
+2020-12-28T18:04:10.4024975+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:04:16.6253372+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices is working. Count: 16
+2020-12-28T18:04:45.8821181+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:04:45.9280935+07:00 [INF] [API.BussinessLogic.CustomerHandler] SyncFromSmartVistaToPortal Last ID sync: 0
+2020-12-28T18:06:32.8761678+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices running.
+2020-12-28T18:06:32.9169793+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices timeInterval: "30"
+2020-12-28T18:06:32.9214811+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices running.
+2020-12-28T18:06:32.9260464+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices timeInterval: "30"
+2020-12-28T18:06:32.9357775+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:06:41.3214541+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/index.html  
+2020-12-28T18:06:41.4108469+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T18:06:41.7033848+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T18:06:41.7150819+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 394.6178ms 200 text/html
+2020-12-28T18:06:42.1282405+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/v1/swagger.json  
+2020-12-28T18:06:42.1318101+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T18:06:42.3061229+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T18:06:42.3106721+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 182.3441ms 200 application/json;charset=utf-8
+2020-12-28T18:06:54.2167077+07:00 [INF] [API.BussinessLogic.CustomerHandler] SyncFromOOSToPortal SUCCESS
+2020-12-28T18:06:54.2201030+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices is working. Count: 1
+2020-12-28T18:07:02.9320054+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:07:32.8901590+07:00 [INF] [API.BussinessLogic.CustomerHandler] SyncFromOOSToPortal SUCCESS
+2020-12-28T18:07:32.8927815+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices is working. Count: 2
+2020-12-28T18:07:36.1830684+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:08:06.1987038+07:00 [INF] [API.BussinessLogic.CustomerHandler] SyncFromOOSToPortal SUCCESS
+2020-12-28T18:08:06.2037880+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices is working. Count: 3
+2020-12-28T18:08:06.2038002+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:08:32.9321851+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:09:55.3670642+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices running.
+2020-12-28T18:09:55.3941379+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices timeInterval: "30"
+2020-12-28T18:09:55.3987987+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices running.
+2020-12-28T18:09:55.4016903+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices timeInterval: "30"
+2020-12-28T18:09:55.4128853+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:10:36.4029287+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:10:40.0389524+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/index.html  
+2020-12-28T18:10:40.0910019+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T18:10:40.3670585+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T18:10:40.3778958+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 340.9447ms 200 text/html
+2020-12-28T18:10:40.6085397+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/v1/swagger.json  
+2020-12-28T18:10:40.6105232+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T18:10:40.7868353+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T18:10:40.7923322+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 184.0319ms 200 application/json;charset=utf-8
+2020-12-28T18:10:52.7612686+07:00 [ERR] [API.BussinessLogic.CustomerHandler] SyncFromOOSToPortal Xảy ra lỗi trong quá trình đồng bộ dữ liệu: PKG_ELG_CMS_CUSTOMER.SYNC_CUSTOMER_FROM_OOS
+2020-12-28T18:10:52.7634109+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices is working. Count: 1
+2020-12-28T18:10:55.4096612+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:55:03.1191593+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices running.
+2020-12-28T18:55:03.1492845+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices timeInterval: "30"
+2020-12-28T18:55:03.1541704+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices running.
+2020-12-28T18:55:03.1585742+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices timeInterval: "30"
+2020-12-28T18:55:03.1673181+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:55:08.5992751+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/index.html  
+2020-12-28T18:55:08.6897472+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T18:55:08.9439075+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T18:55:08.9639205+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 366.2084ms 200 text/html
+2020-12-28T18:55:09.2316856+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/v1/swagger.json  
+2020-12-28T18:55:09.2348366+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T18:55:09.4353162+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T18:55:09.4412480+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 210.0102ms 200 application/json;charset=utf-8
+2020-12-28T18:55:15.8799118+07:00 [INF] [API.BussinessLogic.CustomerHandler] SyncFromOOSToPortal SUCCESS
+2020-12-28T18:55:15.8825041+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices is working. Count: 1
+2020-12-28T18:55:33.1724966+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:56:46.4111523+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:56:46.4136010+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:57:15.1910480+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices running.
+2020-12-28T18:57:15.2596797+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices timeInterval: "30"
+2020-12-28T18:57:15.3898046+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices running.
+2020-12-28T18:57:15.3980503+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:57:15.4396609+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices timeInterval: "30"
+2020-12-28T18:57:48.6033804+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:57:48.7027362+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/index.html  
+2020-12-28T18:57:48.7615013+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T18:57:49.1150954+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T18:57:49.1278647+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 427.442ms 200 text/html
+2020-12-28T18:57:49.3754197+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/v1/swagger.json  
+2020-12-28T18:57:49.3778439+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T18:57:49.6626449+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T18:57:49.6815483+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 305.0802ms 200 application/json;charset=utf-8
+2020-12-28T18:57:53.0725194+07:00 [INF] [API.BussinessLogic.CustomerHandler] SyncFromOOSToPortal SUCCESS
+2020-12-28T18:57:53.0749310+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices is working. Count: 1
+2020-12-28T18:58:15.3018317+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:58:45.2895248+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:59:15.3198265+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T18:59:45.2880456+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:00:15.3224942+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:00:45.2920733+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:01:15.3111524+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:01:45.2858337+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:02:15.3096286+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:02:42.8612789+07:00 [INF] [API.BussinessLogic.CustomerHandler] SyncFromOOSToPortal SUCCESS
+2020-12-28T19:02:42.8631094+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices is working. Count: 3
+2020-12-28T19:02:45.3000602+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:03:40.8765620+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:03:48.4622007+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:04:00.0978296+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices running.
+2020-12-28T19:04:00.1901263+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices timeInterval: "30"
+2020-12-28T19:04:00.1950692+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices running.
+2020-12-28T19:04:00.2031374+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices timeInterval: "30"
+2020-12-28T19:04:00.2325271+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:04:03.3547294+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/index.html  
+2020-12-28T19:04:03.4428725+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T19:04:03.7981519+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T19:04:03.8143192+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 460.6417ms 200 text/html
+2020-12-28T19:04:04.0505990+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/v1/swagger.json  
+2020-12-28T19:04:04.0540783+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T19:04:04.3269245+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T19:04:04.3355507+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 283.961ms 200 application/json;charset=utf-8
+2020-12-28T19:04:09.4695266+07:00 [INF] [API.BussinessLogic.CustomerHandler] SyncFromOOSToPortal SUCCESS
+2020-12-28T19:04:09.4718113+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices is working. Count: 1
+2020-12-28T19:04:30.2289363+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:16:04.1464677+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:16:04.1514726+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:16:15.7700067+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices running.
+2020-12-28T19:16:15.8167082+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices timeInterval: "30"
+2020-12-28T19:16:15.8214331+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices running.
+2020-12-28T19:16:15.8263010+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices timeInterval: "30"
+2020-12-28T19:16:15.8497799+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:17:31.1077491+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:17:31.1083654+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:17:31.3827431+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/index.html  
+2020-12-28T19:17:31.4286139+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T19:17:31.7182284+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T19:17:31.7367787+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 364.4525ms 200 text/html
+2020-12-28T19:17:31.9472387+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request starting HTTP/1.1 GET http://localhost:53400/swagger/v1/swagger.json  
+2020-12-28T19:17:31.9496880+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] No cached response available for this request.
+2020-12-28T19:17:32.2056424+07:00 [INF] [Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware] The response could not be cached for this request.
+2020-12-28T19:17:32.2127014+07:00 [INF] [Microsoft.AspNetCore.Hosting.Internal.WebHost] Request finished in 264.7963ms 200 application/json;charset=utf-8
+2020-12-28T19:17:36.1630901+07:00 [INF] [API.BussinessLogic.CustomerHandler] SyncFromOOSToPortal SUCCESS
+2020-12-28T19:17:36.1654520+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices is working. Count: 1
+2020-12-28T19:18:01.0731482+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:18:31.0661218+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:19:01.0561210+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:19:31.1389665+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncOOSToPortalHostedServices configured stop
+2020-12-28T19:19:40.3218496+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncSVToPortalHostedServices] SyncSVToPortalHostedServices is stopping.
+2020-12-28T19:19:40.3251118+07:00 [INF] [VoucherUrbox.Jobs.Bussiness.SyncOOSToPortalHostedServices] SyncOOSToPortalHostedServices is stopping.

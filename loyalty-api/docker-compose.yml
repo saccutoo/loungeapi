@@ -1,0 +1,8 @@
+version: '3.5'
+
+services:
+  lounge.api:
+    image: loungeapi
+    build:
+      context: .
+      dockerfile: src/Services/Lounge.API/Dockerfile
