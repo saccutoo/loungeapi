@@ -12,5 +12,8 @@ namespace API.Interface
         Task<Response> GetByFaceIdAsync(string faceId);
         Task<Response> GetByFilterAsync(ElgNotificationQueryModel query);
         Task<Response> CreateAsync(ElgNotificationCreateModel model);
+        Task<Response> UpdateAsync(ElgNotificationUpdateModel model);
+        void SetRedisNotification(string faceId, ElgNotificationViewModel modelCacheTemplate);
+        Task<ElgNotificationViewModel> GetRedisNotification(string faceId);
      }
 }

@@ -79,7 +79,14 @@ namespace API.Controllers
             return RequestHelpers.TransformData(result);
         }
 
-      
+        [HttpGet]
+        [Route("redis")]
+        [ProducesResponseType(typeof(ResponseObject<ElgNotificationViewModel>), StatusCodes.Status200OK)]
+        public async Task<ElgNotificationViewModel> GetFromRedis()
+        {
+            var result= await _interfaceHandler.GetRedisNotification("D2AE0A26A30249D6E054002481D91804");
+            return result;
+        }
         #endregion
 
         #region CRUD

@@ -40,6 +40,7 @@ namespace Employee.API
             string dbType = "Oracle";
             services.AddMvc(x => x.Filters.Add(typeof(LogFilter))).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+
             // Register Context
             switch (dbType)
             {
@@ -53,6 +54,14 @@ namespace Employee.API
                     services.AddDbContext<ModelContext>(opts => opts.UseSqlServer(Configuration["ConnectionString:" + dbType]));
                     break;
             }
+
+            //redis
+            services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = Helpers.GetConfig("Redis:ConnectionString");
+                options.InstanceName = Helpers.GetConfig("Redis:InstanceName");
+            });
+            //end redis
 
             services
                 .AddCustomCaching()

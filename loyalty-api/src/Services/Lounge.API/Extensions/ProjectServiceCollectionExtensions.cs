@@ -3,6 +3,7 @@ namespace API.Extensions
     using Microsoft.Extensions.DependencyInjection;
     using API.BussinessLogic;
     using API.Interface;
+    using Lounge.API;
 
     /// <summary>
     /// <see cref="IServiceCollection"/> extension methods add project services.
@@ -36,6 +37,7 @@ namespace API.Extensions
             .AddSingleton<IElgVoucherMappingHandler, ElgVoucherMappingHandler>()
             .AddSingleton<IElgNotificationHandler, ElgNotificationHandler>()
             .AddSingleton<IElgFaceCustomerHandler, ElgFaceCustomerHandler>()
+             .AddSingleton<IRedisService, RedisService>()
             ;
     }
 }

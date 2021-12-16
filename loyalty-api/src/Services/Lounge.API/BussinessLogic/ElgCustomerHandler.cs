@@ -780,7 +780,7 @@ namespace API.BussinessLogic
                     responseFaceCustomer = await _elgFaceCustomerHandler.GetByFaceIdAsync(textSearch) as ResponseObject<ElgFaceCustomerViewModel>;
                     if (responseFaceCustomer==null || responseFaceCustomer.Data==null)
                     {
-                        return new ResponseError(StatusCode.Fail, "Không tìm thấy thông tin khách hàng gắn với face id này!!!");
+                        return new ResponseError(StatusCode.Fail, "Khách hàng này chưa được liên kết thông tin PCSB với hình ảnh cá nhân. Vui lòng tìm kiếm khách hàng và checkin để tạo liên kết !!!");
                     }
                     cusname = responseFaceCustomer.Data.CustId;
                     if (string.IsNullOrEmpty(cusname))
@@ -799,34 +799,39 @@ namespace API.BussinessLogic
                 dyParam.Add("i_representusername", string.IsNullOrEmpty(representUserName) ? null : representUserName, OracleMappingType.Varchar2, ParameterDirection.Input);
                 dyParam.Add("i_email", string.IsNullOrEmpty(email) ? null : email, OracleMappingType.Varchar2, ParameterDirection.Input);
                 var result = await _elgCustomerHandler.ExecuteProcOracleReturnRow(procName, dyParam, true) as ResponseObject<List<ElgCustomerBaseModel>>;
-
-                if (result != null && result.Data != null && result.Data.Count > 0)
+                if (result != null && result.Data != null && result.Data.Count > 0 && !string.IsNullOrEmpty(textSearch))
                 {
-                    //var data = result.Data.FirstOrDefault();
-                    //ElgCustomerDecryptModel model = new ElgCustomerDecryptModel()
-                    //{
-                    //    Id = data.Id.Value,
-                    //    FullName = data.FullName,
-                    //    CustId = data.CustId,
-                    //    PhoneNum = data.PhoneNum,
-                    //    RepresentUserName = data.RepresentUserName,
-                    //    Email = data.Email,
-                    //    Gender=data.Gender
-                    //};
-
-                    //var value = JsonConvert.SerializeObject(model);
-                    //value = EncryptedString.EncryptString(value, "D2AE0A26A30249D6E054002481D91804");
-
+                    //List<ElgCustomerBaseModel> dataNew = new List<ElgCustomerBaseModel>();
+                    //dataNew.Add(result.Data.FirstOrDefault());
+                    //result.Data = dataNew;
+                    return result;
+                }
+                else 
+                {
                     procName = string.Join('.', _dBSchemaName, "PKG_ELG_CUSTOMER_NEW.PRC_SEARCH_CUSTOMER_EXPIRE");
-                    var listCustId = result.Data.Select(x => x.CustId).Distinct();
-                    string stringListCustId = string.Join(",", listCustId);
+                    string stringListCustId = string.Empty;
+                    if (result != null && result.Data != null && result.Data.Count > 0)
+                    {
+                        var listCustId = result.Data.Select(x => x.CustId).Distinct();
+                        stringListCustId = string.Join(",", listCustId);
+                    }
                     dyParam.Add("i_list_custid", stringListCustId, OracleMappingType.Varchar2, ParameterDirection.Input);
                     var resultExpire = await _elgCustomerHandler.ExecuteProcOracleReturnRow(procName, dyParam, true) as ResponseObject<List<ElgCustomerBaseModel>>;
                     if (resultExpire != null && resultExpire.Data != null && resultExpire.Data.Count > 0)
                     {
-                        result.Data.AddRange(resultExpire.Data);
+                        if (result !=null && result.Data!=null)
+                        {
+                            result.Data.AddRange(resultExpire.Data);
+                        }
+                        else
+                        {
+                            result = new ResponseObject<List<ElgCustomerBaseModel>>(null,"",StatusCode.Success);
+                            result.Data = new List<ElgCustomerBaseModel>();
+                            result.Data.AddRange(resultExpire.Data);
+
+                        }
                     }
-                }
+                }              
                 return result;
             }
             catch (Exception ex)
@@ -838,6 +843,17 @@ namespace API.BussinessLogic
                 }
                 else throw ex;
             }
+        }
+
+        public async Task<Response> GetDistinctByCustIdAsync(string custId)
+        {
+            //Lấy thông tin danh sách khách hàng tìm kiếm ra được
+            var procName = string.Join('.', _dBSchemaName, "PKG_ELG_CUSTOMER_NEW.PRC_DISTINCT_BY_CUSTID");
+            var dyParam = new OracleDynamicParameters();
+            dyParam.Add("o_resp_cursor", null, OracleMappingType.RefCursor, ParameterDirection.Output);
+            dyParam.Add("i_cust_id", string.IsNullOrEmpty(custId) ? null : custId, OracleMappingType.Varchar2, ParameterDirection.Input);
+            var result = await _elgCustomerHandler.ExecuteProcOracleReturnRow(procName, dyParam, true);
+            return result;
         }
     }
 }

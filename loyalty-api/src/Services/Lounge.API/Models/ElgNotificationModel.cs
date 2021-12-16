@@ -10,6 +10,8 @@ namespace API.Models
     {      
         public string FaceId { get; set; }
         public string Value { get; set; }
+        public string Base64 { get; set; }
+        public string Other { get; set; }
         public string Status { get; set; }
     }
 
@@ -22,7 +24,17 @@ namespace API.Models
     {
         public string FaceId { get; set; }
         public string Value { get; set; }
+        public string base64 { get; set; }
+        public string Other { get; set; }
         public string CreateBy { get; set; }
+
+    }
+
+    public class ElgNotificationUpdateModel
+    {
+        public string FaceId { get; set; }
+        public string Value { get; set; }
+        public decimal Id { get; set; }
 
     }
     public class ElgNotificationQueryModel : PaginationRequest

@@ -224,7 +224,41 @@ namespace API.BussinessLogic
 
                         var value = JsonConvert.SerializeObject(modelPushToAIPCSB);
                         value = EncryptedString.EncryptString(value, model.FaceId);
-                        //
+
+                        var _elgNotificationHandler = new ElgNotificationHandler();
+                       
+                        var cacheValueNoti=await _elgNotificationHandler.GetRedisNotification(model.FaceId);
+                        if (cacheValueNoti!=null)
+                        {
+                            ElgNotificationViewModel modelCacheNotification = new ElgNotificationViewModel()
+                            {
+                                Id = cacheValueNoti.Id,
+                                Value = value,
+                                Base64 = cacheValueNoti.Base64,
+                                FaceId = model.FaceId,
+                                Other = cacheValueNoti.Other
+                            };
+                            _elgNotificationHandler.SetRedisNotification(model.FaceId, modelCacheNotification);
+                        }
+
+                        var responseNotification = await _elgNotificationHandler.GetByFaceIdAsync(model.FaceId) as ResponseObject<List<ElgNotificationViewModel>>;
+                        if (responseNotification != null && responseNotification.Data != null)
+                        {
+                            foreach (var item in responseNotification.Data)
+                            {
+                                if (string.IsNullOrEmpty(item.Value))
+                                {
+                                    ElgNotificationUpdateModel updateNoti = new ElgNotificationUpdateModel()
+                                    {
+                                        Id = item.Id,
+                                        FaceId = item.FaceId,
+                                        Value = value
+                                    };
+                                    await _elgNotificationHandler.UpdateAsync(updateNoti);
+                                }
+                            }
+                        }
+
                         var _elgFaceCustomerHandler = new ElgFaceCustomerHandler();
                         var responseFaceCustomer = await _elgFaceCustomerHandler.GetByFaceIdAsync(model.FaceId) as ResponseObject<ElgFaceCustomerViewModel>;
                         if (responseFaceCustomer != null && responseFaceCustomer.Data != null)
@@ -249,6 +283,8 @@ namespace API.BussinessLogic
                             };
                             await _elgFaceCustomerHandler.CreateAsync(createModel);
                         }
+
+
                         //await 
                     }
                     #endregion                  

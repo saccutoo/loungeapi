@@ -125,5 +125,6 @@ namespace API.Models
         public string RepresentUserName { get; set; }
         public string Email { get; set; }
         public string Gender { get; set; }
+        public DateTime CreatedDate { get; set; }
     }
 }

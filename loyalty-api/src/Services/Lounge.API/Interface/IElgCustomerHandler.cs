@@ -26,9 +26,8 @@ namespace API.Interface
         //Vinhtq1
         Task<Response> UpdateDetailCustomer(ElgCustomerBaseModel model);
         Task<Response> GetElgCustomerById(decimal elgCustId);
-
         Task<Response> GetByCustIdAsync(string elgCustId);
-
         Task<Response> GetListCustomerV3Async(string textSearch, string fullName, string phoneNum, string cusname, string representUserName, string email);
+        Task<Response> GetDistinctByCustIdAsync(string custId);
     }
 }
