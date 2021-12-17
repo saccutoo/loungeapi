@@ -10,6 +10,8 @@ using API.Models;
 using API.Infrastructure.Migrations;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using Lounge.API;
+using Microsoft.Extensions.Caching.Distributed;
 
 namespace API.BussinessLogic
 {
@@ -20,11 +22,13 @@ namespace API.BussinessLogic
 
         private string _dBSchemaName;
         private readonly ILogger<ElgCheckinHandler> _logger;
+        private readonly IRedisService _redisService;
 
-        public ElgCheckinHandler(ILogger<ElgCheckinHandler> logger = null)
+        public ElgCheckinHandler(ILogger<ElgCheckinHandler> logger = null, IRedisService redisService = null)
         {
             _logger = logger;
             _dBSchemaName = Helpers.GetConfig("DBSchemaName");
+            _redisService = redisService;
         }
         private async Task<Response> CreateAsync(decimal bookingID, ElgCheckinPeopleGoWithModel model)
         {
@@ -227,7 +231,7 @@ namespace API.BussinessLogic
 
                         var _elgNotificationHandler = new ElgNotificationHandler();
                        
-                        var cacheValueNoti=await _elgNotificationHandler.GetRedisNotification(model.FaceId);
+                        var cacheValueNoti=await GetRedisNotification(model.FaceId);
                         if (cacheValueNoti!=null)
                         {
                             ElgNotificationViewModel modelCacheNotification = new ElgNotificationViewModel()
@@ -238,26 +242,16 @@ namespace API.BussinessLogic
                                 FaceId = model.FaceId,
                                 Other = cacheValueNoti.Other
                             };
-                            _elgNotificationHandler.SetRedisNotification(model.FaceId, modelCacheNotification);
+                            SetRedisNotification(model.FaceId, modelCacheNotification);
                         }
 
-                        var responseNotification = await _elgNotificationHandler.GetByFaceIdAsync(model.FaceId) as ResponseObject<List<ElgNotificationViewModel>>;
-                        if (responseNotification != null && responseNotification.Data != null)
+                        ElgNotificationUpdateModel updateNoti = new ElgNotificationUpdateModel()
                         {
-                            foreach (var item in responseNotification.Data)
-                            {
-                                if (string.IsNullOrEmpty(item.Value))
-                                {
-                                    ElgNotificationUpdateModel updateNoti = new ElgNotificationUpdateModel()
-                                    {
-                                        Id = item.Id,
-                                        FaceId = item.FaceId,
-                                        Value = value
-                                    };
-                                    await _elgNotificationHandler.UpdateAsync(updateNoti);
-                                }
-                            }
-                        }
+                            Id = 0,
+                            FaceId = model.FaceId,
+                            Value = value
+                        };
+                        await _elgNotificationHandler.UpdateByFaceAsync(updateNoti);
 
                         var _elgFaceCustomerHandler = new ElgFaceCustomerHandler();
                         var responseFaceCustomer = await _elgFaceCustomerHandler.GetByFaceIdAsync(model.FaceId) as ResponseObject<ElgFaceCustomerViewModel>;
@@ -302,5 +296,39 @@ namespace API.BussinessLogic
                 else throw ex;
             }
         }
+
+        public async Task<ElgNotificationViewModel> GetRedisNotification(string faceId)
+        {
+            ElgNotificationViewModel valueReturn = null;
+            try
+            {
+                var cacheKey = Helpers.GetConfig("Redis:Key") + Helpers.GetConfig("Redis:ElgNotification") + faceId.Trim();
+                var cachedValue = await _redisService.GetFromCache<ElgNotificationViewModel>(cacheKey);
+                if (cachedValue != null)
+                {
+                    valueReturn = cachedValue;
+                }
+            }
+            catch (Exception)
+            {
+            }
+            return valueReturn;
+        }
+
+        public async void SetRedisNotification(string faceId, ElgNotificationViewModel modelCacheTemplate)
+        {
+            var options = new DistributedCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromSeconds(Convert.ToInt32(Helpers.GetConfig("Redis:Expired"))));
+
+            //set cache lên redis với bảng template
+
+            var cacheKey = Helpers.GetConfig("Redis:Key") + Helpers.GetConfig("Redis:ElgNotification") + faceId.Trim();
+            //remove cache cũ
+            await _redisService.ClearCache(cacheKey);
+
+            // cachedTime = "Expired";
+            // Nạp  giá trị mới cho cache
+            await _redisService.SetCache<ElgNotificationViewModel>(cacheKey, modelCacheTemplate, options);
+        }
+
     }
 }

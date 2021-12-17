@@ -331,7 +331,7 @@ namespace API.BussinessLogic
             try
             {
 
-                var procName = _dBSchemaName + "." + _PackageName + "." + "INSERT_ROW";
+                var procName = _dBSchemaName + "." + _PackageName + "." + "UPDATE_ROW";
                 var dyParam = new OracleDynamicParameters();
                 dyParam.Add("OUT_CUR", null, OracleMappingType.RefCursor, ParameterDirection.Output);
                 dyParam.Add("PID", model.Id, OracleMappingType.Decimal, ParameterDirection.Input);
@@ -339,6 +339,30 @@ namespace API.BussinessLogic
                 dyParam.Add("PVALUE", model.Value, OracleMappingType.Varchar2, ParameterDirection.Input);
                 var result = await _ElgNotificationHandler.ExecuteProcOracle(procName, dyParam);
 
+                return result;
+            }
+            catch (Exception ex)
+            {
+                if (_logger != null)
+                {
+                    _logger.LogError(ex, "Exception Error");
+                    return new ResponseError(StatusCode.Fail, "Lỗi ngoại lệ");
+                }
+                else throw ex;
+            }
+        }
+
+        public async Task<Response> UpdateByFaceAsync(ElgNotificationUpdateModel model)
+        {
+            try
+            {
+
+                var procName = _dBSchemaName + "." + _PackageName + "." + "UPDATE_ROW_BY_FACE";
+                var dyParam = new OracleDynamicParameters();
+                dyParam.Add("OUT_CUR", null, OracleMappingType.RefCursor, ParameterDirection.Output);
+                dyParam.Add("PFACEID", model.FaceId, OracleMappingType.Varchar2, ParameterDirection.Input);
+                dyParam.Add("PVALUE", model.Value, OracleMappingType.Varchar2, ParameterDirection.Input);
+                var result = await _ElgNotificationHandler.ExecuteProcOracle(procName, dyParam);
                 return result;
             }
             catch (Exception ex)
@@ -371,11 +395,17 @@ namespace API.BussinessLogic
         public async Task<ElgNotificationViewModel> GetRedisNotification(string faceId)
         {
             ElgNotificationViewModel valueReturn = null;
-            var cacheKey = Helpers.GetConfig("Redis:Key") + Helpers.GetConfig("Redis:ElgNotification") + faceId.Trim();
-            var cachedValue = await _redisService.GetFromCache<ElgNotificationViewModel>(cacheKey);
-            if (cachedValue != null)
+            try
             {
-                valueReturn = cachedValue;
+                var cacheKey = Helpers.GetConfig("Redis:Key") + Helpers.GetConfig("Redis:ElgNotification") + faceId.Trim();
+                var cachedValue = await _redisService.GetFromCache<ElgNotificationViewModel>(cacheKey);
+                if (cachedValue != null)
+                {
+                    valueReturn = cachedValue;
+                }
+            }
+            catch (Exception)
+            {
             }
             return valueReturn;
         }

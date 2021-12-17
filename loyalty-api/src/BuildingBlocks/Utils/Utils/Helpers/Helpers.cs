@@ -813,7 +813,7 @@ namespace Utils
                 //Set up the encryption objects
                 using (AesCryptoServiceProvider acsp = GetProvider(Encoding.Default.GetBytes(passPhrase)))
                 {
-                    byte[] sourceBytes = Encoding.ASCII.GetBytes(plainSourceStringToEncrypt);
+                    byte[] sourceBytes = Encoding.UTF8.GetBytes(plainSourceStringToEncrypt);
                     ICryptoTransform ictE = acsp.CreateEncryptor();
 
                     //Set up stream to contain the encryption
