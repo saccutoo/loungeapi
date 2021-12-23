@@ -27,7 +27,7 @@ namespace API.Interface
         Task<Response> UpdateDetailCustomer(ElgCustomerBaseModel model);
         Task<Response> GetElgCustomerById(decimal elgCustId);
         Task<Response> GetByCustIdAsync(string elgCustId);
-        Task<Response> GetListCustomerV3Async(string textSearch, string fullName, string phoneNum, string cusname, string representUserName, string email);
+        Task<Response> GetListCustomerV3Async(string textSearch, string fullName, string phoneNum, string cusname, string representUserName, string email, string status);
         Task<Response> GetDistinctByCustIdAsync(string custId);
     }
 }

@@ -293,14 +293,12 @@ namespace API.Controllers
         [HttpGet]
         [Route("listcustomerv3")]
         [ProducesResponseType(typeof(ResponseObject<ElgCustomerBaseModel>), StatusCodes.Status200OK)]
-        public async Task<IActionResult> GetListCustomerV3Async(string textSearch, string fullName, string phoneNum, string cusname, string representUserName, string email)
+        public async Task<IActionResult> GetListCustomerV3Async(string textSearch, string fullName, string phoneNum, string cusname, string representUserName, string email,string status)
         {
-            ElgCustomerQueryModel queryModel = new ElgCustomerQueryModel();
             Response result = null;
-
             try
             {
-                result = await _interfaceHandler.GetListCustomerV3Async(textSearch, fullName, phoneNum, cusname, representUserName, email);
+                result = await _interfaceHandler.GetListCustomerV3Async(textSearch, fullName, phoneNum, cusname, representUserName, email,status);
             }
             catch (Exception ex)
             {

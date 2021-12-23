@@ -769,11 +769,12 @@ namespace API.BussinessLogic
         //vinhtq::07/12/2021
         //hàm search danh sách khách hàng mới.trả ra list customer
 
-        public async Task<Response> GetListCustomerV3Async(string textSearch,string fullName,string phoneNum,string cusname,string representUserName,string email)
+        public async Task<Response> GetListCustomerV3Async(string textSearch,string fullName,string phoneNum,string cusname,string representUserName,string email,string status)
         {
             try
             {
                 ResponseObject<ElgFaceCustomerViewModel> responseFaceCustomer = null;
+                ResponseObject<List<ElgCustomerBaseModel>> result = null;
                 if (!string.IsNullOrEmpty(textSearch))
                 {
                     ElgFaceCustomerHandler _elgFaceCustomerHandler = new ElgFaceCustomerHandler();
@@ -798,40 +799,90 @@ namespace API.BussinessLogic
                 dyParam.Add("i_cusname", string.IsNullOrEmpty(cusname) ? null : cusname, OracleMappingType.Varchar2, ParameterDirection.Input);
                 dyParam.Add("i_representusername", string.IsNullOrEmpty(representUserName) ? null : representUserName, OracleMappingType.Varchar2, ParameterDirection.Input);
                 dyParam.Add("i_email", string.IsNullOrEmpty(email) ? null : email, OracleMappingType.Varchar2, ParameterDirection.Input);
-                var result = await _elgCustomerHandler.ExecuteProcOracleReturnRow(procName, dyParam, true) as ResponseObject<List<ElgCustomerBaseModel>>;
-                if (result != null && result.Data != null && result.Data.Count > 0 && !string.IsNullOrEmpty(textSearch))
+
+                //Không có trạng thái thì là đang search theo faceid
+                if (string.IsNullOrEmpty(status))
                 {
-                    //List<ElgCustomerBaseModel> dataNew = new List<ElgCustomerBaseModel>();
-                    //dataNew.Add(result.Data.FirstOrDefault());
-                    //result.Data = dataNew;
-                    return result;
-                }
-                else 
-                {
-                    procName = string.Join('.', _dBSchemaName, "PKG_ELG_CUSTOMER_NEW.PRC_SEARCH_CUSTOMER_EXPIRE");
-                    string stringListCustId = string.Empty;
-                    if (result != null && result.Data != null && result.Data.Count > 0)
+                    result = await _elgCustomerHandler.ExecuteProcOracleReturnRow(procName, dyParam, true) as ResponseObject<List<ElgCustomerBaseModel>>;
+                    if (result != null && result.Data != null && result.Data.Count > 0 && !string.IsNullOrEmpty(textSearch))
                     {
-                        var listCustId = result.Data.Select(x => x.CustId).Distinct();
-                        stringListCustId = string.Join(",", listCustId);
+                        //List<ElgCustomerBaseModel> dataNew = new List<ElgCustomerBaseModel>();
+                        //dataNew.Add(result.Data.FirstOrDefault());
+                        //result.Data = dataNew;
+                        return result;
                     }
-                    dyParam.Add("i_list_custid", stringListCustId, OracleMappingType.Varchar2, ParameterDirection.Input);
-                    var resultExpire = await _elgCustomerHandler.ExecuteProcOracleReturnRow(procName, dyParam, true) as ResponseObject<List<ElgCustomerBaseModel>>;
-                    if (resultExpire != null && resultExpire.Data != null && resultExpire.Data.Count > 0)
+                    else
                     {
-                        if (result !=null && result.Data!=null)
+                        procName = string.Join('.', _dBSchemaName, "PKG_ELG_CUSTOMER_NEW.PRC_SEARCH_CUSTOMER_EXPIRE");
+                        string stringListCustId = string.Empty;
+                        if (result != null && result.Data != null && result.Data.Count > 0)
                         {
-                            result.Data.AddRange(resultExpire.Data);
+                            var listCustId = result.Data.Select(x => x.CustId).Distinct();
+                            stringListCustId = string.Join(",", listCustId);
+                        }
+                        dyParam.Add("i_list_custid", stringListCustId, OracleMappingType.Varchar2, ParameterDirection.Input);
+                        var resultExpire = await _elgCustomerHandler.ExecuteProcOracleReturnRow(procName, dyParam, true) as ResponseObject<List<ElgCustomerBaseModel>>;
+                        if (resultExpire != null && resultExpire.Data != null && resultExpire.Data.Count > 0)
+                        {
+                            if (result != null && result.Data != null)
+                            {
+                                result.Data.AddRange(resultExpire.Data);
+                            }
+                            else
+                            {
+                                result = new ResponseObject<List<ElgCustomerBaseModel>>(null, "", StatusCode.Success);
+                                result.Data = new List<ElgCustomerBaseModel>();
+                                result.Data.AddRange(resultExpire.Data);
+
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    if (status=="APPROVED")
+                    {
+                        result = await _elgCustomerHandler.ExecuteProcOracleReturnRow(procName, dyParam, true) as ResponseObject<List<ElgCustomerBaseModel>>;
+                        if (result==null || result.Data ==null || result.Data.Count==0)
+                        {
+                            return new ResponseError(StatusCode.Fail, "Không tìm thấy thông tin khách hàng đã duyệt.Vui lòng nhập tìm kiếm theo thông tin khác !");
+                        }
+                    }
+                    else
+                    {
+                        procName = string.Join('.', _dBSchemaName, "PKG_ELG_CUSTOMER_NEW.PRC_SEARCH_CUSTOMER_EXPIRE");
+                        string stringListCustId = string.Empty;
+                        if (result != null && result.Data != null && result.Data.Count > 0)
+                        {
+                            var listCustId = result.Data.Select(x => x.CustId).Distinct();
+                            stringListCustId = string.Join(",", listCustId);
+                        }
+                        dyParam.Add("i_list_custid", stringListCustId, OracleMappingType.Varchar2, ParameterDirection.Input);
+                        var resultExpire = await _elgCustomerHandler.ExecuteProcOracleReturnRow(procName, dyParam, true) as ResponseObject<List<ElgCustomerBaseModel>>;
+                        if (resultExpire != null && resultExpire.Data != null && resultExpire.Data.Count > 0)
+                        {
+                            if (result != null && result.Data != null)
+                            {
+                                result.Data.AddRange(resultExpire.Data);
+                            }
+                            else
+                            {
+                                result = new ResponseObject<List<ElgCustomerBaseModel>>(null, "", StatusCode.Success);
+                                result.Data = new List<ElgCustomerBaseModel>();
+                                result.Data.AddRange(resultExpire.Data);
+                            }
+                            if (result == null || result.Data == null || result.Data.Count == 0)
+                            {
+                                return new ResponseError(StatusCode.Fail, "Không tìm thấy thông tin khách hàng hết hạn.Vui lòng nhập tìm kiếm theo thông tin khác !");
+                            }
                         }
                         else
                         {
-                            result = new ResponseObject<List<ElgCustomerBaseModel>>(null,"",StatusCode.Success);
-                            result.Data = new List<ElgCustomerBaseModel>();
-                            result.Data.AddRange(resultExpire.Data);
-
+                            return new ResponseError(StatusCode.Fail, "Không tìm thấy thông tin khách hàng hết hạn.Vui lòng nhập tìm kiếm theo thông tin khác !");
                         }
                     }
-                }              
+                }
+                      
                 return result;
             }
             catch (Exception ex)
