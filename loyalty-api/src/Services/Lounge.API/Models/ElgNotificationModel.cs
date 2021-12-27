@@ -43,4 +43,13 @@ namespace API.Models
         public string CusId { get; set; }
         public string PhoneNum { get; set; }
     }
+
+    public class ElgNotificationPushKafkaModel : ElgBookingBaseModel
+    {
+        public string FaceId { get; set; }
+        public object Value { get; set; }
+        public string Base64 { get; set; }
+        public string Other { get; set; }
+        public string Status { get; set; }
+    }
 }

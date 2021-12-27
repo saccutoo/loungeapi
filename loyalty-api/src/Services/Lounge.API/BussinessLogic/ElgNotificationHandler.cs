@@ -242,6 +242,7 @@ namespace API.BussinessLogic
             try
             {
                 var value = string.Empty;
+                ElgCustomerDecryptModel modelpushKafka = null;
                 var _elgFaceCustomerHandler = new ElgFaceCustomerHandler();
                 var responseFaceCustomer = await _elgFaceCustomerHandler.GetByFaceIdAsync(model.FaceId) as ResponseObject<ElgFaceCustomerViewModel>;
                 if (responseFaceCustomer != null && responseFaceCustomer.Data != null && !string.IsNullOrEmpty(responseFaceCustomer.Data.CustId))
@@ -263,7 +264,7 @@ namespace API.BussinessLogic
                                 Email = data.Email,
                                 Gender = data.Gender
                             };
-
+                            modelpushKafka = modelPushToAIPCSB;
                             value = JsonConvert.SerializeObject(modelPushToAIPCSB);
                             value = EncryptedString.EncryptString(value, model.FaceId);
                         }
@@ -283,6 +284,7 @@ namespace API.BussinessLogic
                                     Gender = data.Gender
                                 };
 
+                                modelpushKafka = modelPushToAIPCSB;
                                 value = JsonConvert.SerializeObject(modelPushToAIPCSB);
                                 value = EncryptedString.EncryptString(value, model.FaceId);
                             }
@@ -312,6 +314,16 @@ namespace API.BussinessLogic
                         Other = model.Other
                     };                   
                     SetRedisNotification(model.FaceId, modelCacheTemplate);
+                    ElgNotificationPushKafkaModel modelPushKafka = new ElgNotificationPushKafkaModel()
+                    {
+                        Id = result.Data.Id,
+                        Value = modelpushKafka,
+                        Base64 = model.base64,
+                        FaceId = model.FaceId,
+                        Other = model.Other,
+                        CreateDate = DateTime.Now
+                    };
+                    Kafka.Push(JsonConvert.SerializeObject(modelPushKafka));
                 }
                 return result;
             }
